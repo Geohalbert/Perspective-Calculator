@@ -18,12 +18,12 @@ export default class HomeView extends Component {
     return {
       _statusBar: {
         backgroundColor: 'transparent',
-        style: 'dark',
+        style: 'light-content',
         drawBehind: true,
       },
       topBar: {
         title: {
-          text: 'Home',
+          text: 'Perspective Calculator',
         },
         largeTitle: {
           visible: true,
@@ -39,17 +39,17 @@ export default class HomeView extends Component {
     return (
       <View style={styles.bar}>
         <LinearGradient
-          colors={['#fac0fa', '#ffdea6', '#b9ecaf']}
+          colors={['white', 'purple', 'black']}
           locations={[0.15, 0.48, 1]}
           style={styles.root}
         >
           <Image source={Images.logo}/> 
-          <Button title='Switch to tab based app' onPress={this.onClickSwitchToTabs} />
+          {/* <Button title='Switch to tab based app' onPress={this.onClickSwitchToTabs} /> */}
           <Button title='Register' onPress={this.onClickPush('App.Register')} />
           <Button title='Login' onPress={this.onClickPush('App.Login')} />
-          <Button title='Show Modal' onPress={this.showModal} />
-          <Text style={styles.footer}>{`this.props.componentId = ${this.props.componentId}`}</Text>
-          {this.props.text ? (<Text style={styles.footer}>{this.props.text}</Text>) : false}
+          {/* <Button title='Show Modal' onPress={this.showModal} /> */}
+          {/* <Text style={styles.footer}>{`this.props.componentId = ${this.props.componentId}`}</Text>
+          {this.props.text ? (<Text style={styles.footer}>{this.props.text}</Text>) : false} */}
         </LinearGradient>
       </View>
     );

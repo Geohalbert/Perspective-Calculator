@@ -1427,8 +1427,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeMobxFirebase;
-				PRODUCT_NAME = ReactNativeMobxFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeMobxFirebaseStarter;
+				PRODUCT_NAME = ReactNativeMobxFirebaseStarter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1454,8 +1454,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeMobxFirebase;
-				PRODUCT_NAME = ReactNativeMobxFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReactNativeMobxFirebaseStarter;
+				PRODUCT_NAME = ReactNativeMobxFirebaseStarter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

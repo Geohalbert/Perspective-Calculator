@@ -4,10 +4,9 @@ import {
   Easing,
   View
 } from 'react-native'
-import { Icons } from '../../styles'
 import Animation from 'lottie-react-native';
 import LOADER_JSON from '../../assets/lottie/loading-circle.json'
-import styles from '../../depstyles/theme/LoaderViewStyles'
+import styles from '../../styles/theme/LoaderViewStyles'
 
 export default class LoaderView extends Component {
   constructor(props) {
@@ -53,7 +52,8 @@ export default class LoaderView extends Component {
     })
     return (<Animated.Image
       style={[style, { transform: [{ rotate: spin }] }]}
-      source={this.props.source || Icons.spinner}
+      // source={this.props.source || Icons.spinner}
+      source={this.props.source}
     />)
   }
 
