@@ -39,7 +39,7 @@ export default class HomeView extends Component {
     return (
       <View style={styles.bar}>
         <LinearGradient
-          colors={['white', 'purple', 'black']}
+          colors={['#fff', '#7d0e7d', '#000000']}
           locations={[0.15, 0.48, 1]}
           style={styles.root}
         >
