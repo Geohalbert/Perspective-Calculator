@@ -47,6 +47,7 @@ export default class HomeView extends Component {
           {/* <Button title='Switch to tab based app' onPress={this.onClickSwitchToTabs} /> */}
           <Button title='Register' onPress={this.onClickPush('App.Register')} />
           <Button title='Login' onPress={this.onClickPush('App.Login')} />
+          <Button title='Continue as guest' onPress={this.onClickPush('App.Guest')} />
           {/* <Button title='Show Modal' onPress={this.showModal} /> */}
           {/* <Text style={styles.footer}>{`this.props.componentId = ${this.props.componentId}`}</Text>
           {this.props.text ? (<Text style={styles.footer}>{this.props.text}</Text>) : false} */}
