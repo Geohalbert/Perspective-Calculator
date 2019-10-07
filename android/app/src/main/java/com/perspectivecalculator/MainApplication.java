@@ -1,4 +1,4 @@
-package com.reactnativemobxfirebasestarter;
+package com.perspectivecalculator;
 
 import android.app.Application;
 
