@@ -23,10 +23,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		51450AEE235EF29700090B44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51450AED235EF29600090B44 /* GoogleService-Info.plist */; };
 		73720CE73B8145FB9E8DD164 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9E594253B4B3D98C851F5 /* libRNFirebase.a */; };
 		7E37B5DD21ED4E4C000AECC6 /* libFirebaseCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E37B5DC21ED4E4C000AECC6 /* libFirebaseCore.a */; };
 		7E61955422E27D610082303F /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E3DD621ED26FE00DC5326 /* Lottie.framework */; };
-		7E7E3E4E21ED29C200DC5326 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E7E3E4D21ED29C200DC5326 /* GoogleService-Info.plist */; };
 		7E7E3E4F21ED2B0200DC5326 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E3DE321ED26FE00DC5326 /* libReactNativeNavigation.a */; };
 		7E7E3E5121ED2B1D00DC5326 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6094AD21ED235800D7A844 /* libBVLinearGradient.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -402,11 +402,11 @@
 		2DB5EE69AE3943A1807C2FD1 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		3B9BE8BCA58548EE33A49A90 /* Pods-perspectivecalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perspectivecalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-perspectivecalculator/Pods-perspectivecalculator.release.xcconfig"; sourceTree = "<group>"; };
 		4B58EF5D08C048A09EB698A0 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/lib/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
+		51450AED235EF29600090B44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "perspectivecalculator/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7BC663EDA26D4B248B0E8862 /* libReactNativeNavigation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeNavigation.a; sourceTree = "<group>"; };
 		7E37B5DC21ED4E4C000AECC6 /* libFirebaseCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E7E3E4D21ED29C200DC5326 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9AADE8DFF4254DDAABA8C0B8 /* ReactNativeNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ReactNativeNavigationTests.xctest; sourceTree = "<group>"; };
 		A4573D33391319BBF954EAE4 /* libPods-perspectivecalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-perspectivecalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -542,7 +542,7 @@
 		13B07FAE1A68108700A75B9A /* perspectivecalculator */ = {
 			isa = PBXGroup;
 			children = (
-				7E7E3E4D21ED29C200DC5326 /* GoogleService-Info.plist */,
+				51450AED235EF29600090B44 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1234,7 +1234,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				7E7E3E4E21ED29C200DC5326 /* GoogleService-Info.plist in Resources */,
+				51450AEE235EF29700090B44 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

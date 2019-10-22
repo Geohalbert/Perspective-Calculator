@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>214721836679-ldh47b7cdu278fmtp30uhal6fgvarr54.apps.googleusercontent.com</string>
+	<string>214721836679-dmmf7tbuhgmun3n4u9bucjagcr0runiv.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.214721836679-ldh47b7cdu278fmtp30uhal6fgvarr54</string>
+	<string>com.googleusercontent.apps.214721836679-dmmf7tbuhgmun3n4u9bucjagcr0runiv</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCTxN0pQ_H8HVI1qmp3nJtDuWe-77OJUqA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>org.reactjs.native.example.ReactNativeMobxFirebaseStarter</string>
+	<string>org.reactjs.native.example.perspectivecalculator</string>
 	<key>PROJECT_ID</key>
 	<string>perspective-calc</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:214721836679:ios:c6a37e80d70af756082a22</string>
+	<string>1:214721836679:ios:a21f493583a8c669082a22</string>
 	<key>DATABASE_URL</key>
 	<string>https://perspective-calc.firebaseio.com</string>
 </dict>
