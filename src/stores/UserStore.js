@@ -11,7 +11,7 @@ import autobind from 'autobind-decorator'
 class UserStore {
   @observable _userId = '';
   @observable _user = {};
-  @observable loggedIn = false;
+  @observable _loggedIn = false;
 
   constructor() {
   }
@@ -32,6 +32,7 @@ class UserStore {
     return USERSERVICE.signInWithEmailAndPassword(username, password).then((resp) => {
       if (resp.user) {
         this.user = resp.user
+        this.loggedIn = true
       }
     }).catch((e) => {
       Alert.alert(e.message)
@@ -41,6 +42,14 @@ class UserStore {
   @computed
   get userId() {
     return this._userId === '' ? false : this._userId
+  }
+
+  @computed
+  get loggedIn() {
+    return this._loggedIn
+  }
+  set loggedIn(val) {
+    this._loggedIn = val
   }
 
   @computed

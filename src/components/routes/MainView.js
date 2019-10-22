@@ -4,17 +4,17 @@ import {
 } from 'react-native';
 import styles from '../../styles/routes/HomeViewStyles'
 import {inject, observer} from 'mobx-react'
-// import GuestSubView from '../theme/GuestSubView'
+// import MainSubView from '../theme/MainSubView'
 import { Navigation } from 'react-native-navigation'
 
 @inject ('user')
 @observer
-export default class GuestView extends Component {
+export default class View extends Component {
   static options() {
     return {
       topBar: {
         title: {
-          text: 'Guest',
+          text: 'Main',
         },
       }
     };
