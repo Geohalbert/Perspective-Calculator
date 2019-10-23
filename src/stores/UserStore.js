@@ -31,8 +31,20 @@ class UserStore {
   login(username, password) {
     return USERSERVICE.signInWithEmailAndPassword(username, password).then((resp) => {
       if (resp.user) {
-        this.user = resp.user
+        this.user = USERSERVICE.userInfo()
         this.loggedIn = true
+      }
+    }).catch((e) => {
+      Alert.alert(e.message)
+    })
+  }
+
+  @action
+  logout() {
+    return USERSERVICE.signOut().then((resp) => {
+      if (resp) {
+        this.user = {}
+        this.loggedIn = false
       }
     }).catch((e) => {
       Alert.alert(e.message)
