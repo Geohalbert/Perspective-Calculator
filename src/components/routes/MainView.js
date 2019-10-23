@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  View, Text
+  Text
 } from 'react-native';
 import styles from '../../styles/routes/HomeViewStyles'
 import {inject, observer} from 'mobx-react'

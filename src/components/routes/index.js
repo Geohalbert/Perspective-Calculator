@@ -7,14 +7,12 @@ import stores from '../../stores';
 //Route Imports
 import HomeView from './HomeView';
 import LoginView from './LoginView';
-import GuestView from './MainView';
 import MainView from './MainView';
 import RegisterView from './RegisterView';
 
 export default routes = {
   'App.Home': HomeView,
   'App.Login': LoginView,
-  'App.Guest': GuestView,
   'App.Main': MainView,
   'App.Register': RegisterView,
 }

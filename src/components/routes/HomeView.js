@@ -10,11 +10,17 @@ import LinearGradient from 'react-native-linear-gradient'
 import Button from '../theme/ButtonView'
 import { Icons, Images } from '../../styles/theme'
 import styles from '../../styles/routes/HomeViewStyles'
+import firebase from 'react-native-firebase'
 
 @inject('appState')
 @inject('user')
 @observer
 export default class HomeView extends Component {
+  state = { currentUser: null }
+  componentDidMount() {
+    const { currentUser } = firebase.auth()
+    this.setState({ currentUser })
+  }
   static options() {
     return {
       _statusBar: {
@@ -46,10 +52,11 @@ export default class HomeView extends Component {
         >
           <Image source={Images.logo}/> 
           <Text>{this.props.user.userId}</Text>
+          <Text style={styles.footer}>{`this.state.currentUser = ${this.state.currentUser}`}</Text>
           {/* <Button title='Switch to tab based app' onPress={this.onClickSwitchToTabs} /> */}
           <Button title='Register' onPress={this.onClickPush('App.Register')} />
           <Button title='Login' onPress={this.onClickPush('App.Login')} />
-          <Button title='Continue as guest' onPress={this.onClickPush('App.Guest')} />
+          <Button title='Continue to Main screen' onPress={this.onClickPush('App.Main')} />
           <Button title='Show Modal' onPress={this.showModal} />
           <Text style={styles.footer}>{`this.props.user.loggedIn = ${this.props.user.loggedIn}`}</Text>
           {this.props.text ? (<Text style={styles.footer}>{this.props.text}</Text>) : false}
