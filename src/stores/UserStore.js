@@ -1,9 +1,12 @@
-import { observable, action, computed } from 'mobx';
+import {
+  observable,
+  action,
+  computed
+} from 'mobx';
 import {
   Alert
 } from 'react-native'
 import LocalStorage from '../utils/LocalStorage';
-import Theme from '../styles/theme.js'
 import USERSERVICE from '../service/user.service'
 import autobind from 'autobind-decorator'
 
@@ -13,12 +16,10 @@ class UserStore {
   @observable _user = {};
   @observable _loggedIn = false;
 
-  constructor() {
-  }
 
   @action
   register(username, password) {
-    return USERSERVICE.createUserWithEmailAndPassword(username, password).then((resp)=>{
+    return USERSERVICE.createUserWithEmailAndPassword(username, password).then((resp) => {
       if (resp.user) {
         this.user = resp.user
       }

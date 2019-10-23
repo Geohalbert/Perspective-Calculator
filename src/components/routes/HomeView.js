@@ -15,8 +15,6 @@ import styles from '../../styles/routes/HomeViewStyles'
 @inject('user')
 @observer
 export default class HomeView extends Component {
-  componentDidMount() {
-  }
   static options() {
     return {
       _statusBar: {
@@ -50,11 +48,11 @@ export default class HomeView extends Component {
           <Text>{this.props.user.userId}</Text>
           {/* <Button title='Switch to tab based app' onPress={this.onClickSwitchToTabs} /> */}
           <Button title='Register' onPress={this.onClickPush('App.Register')} />
-          {this.props.user.loggedIn ? (<Button title='Logout' onClick={this.props.user.logout()} />) : (<Button title='Login' onPress={this.onClickPush('App.Login')} />)}
+          <Button title='Login' onPress={this.onClickPush('App.Login')} />
           <Button title='Continue to Main screen' onPress={this.onClickPush('App.Main')} />
           <Button title='Show Modal' onPress={this.showModal} />
           <Text style={styles.footer}>{`this.props.user.loggedIn = ${this.props.user.loggedIn}`}</Text>
-          {this.props.text ? (<Text style={styles.footer}>{this.props.text}</Text>) : false}
+          <Text style={styles.footer}>{`this.props.user.user = ${this.props.user.user}`}</Text>{this.props.text ? (<Text style={styles.footer}>{this.props.text}</Text>) : false}
         </LinearGradient>
       </View>
     );
