@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import {
-  Text
+  Text,
+  View
 } from 'react-native';
-import styles from '../../styles/routes/HomeViewStyles'
 import {inject, observer} from 'mobx-react'
+import styles from '../../styles/routes/LoginViewStyles'
 // import MainSubView from '../theme/MainSubView'
 import { Navigation } from 'react-native-navigation'
 
 @inject ('user')
 @observer
-export default class View extends Component {
+export default class MainView extends Component {
   static options() {
     return {
       topBar: {
@@ -24,6 +25,10 @@ export default class View extends Component {
     super();
     this.state = {
       loading: false,
+      collection1: '',
+      object1: '',
+      collection2: '',
+      object2: ''
     }
   }
 
@@ -32,6 +37,11 @@ export default class View extends Component {
     return (
       <View style={styles.container}>
           <Text>HERE WE GO</Text>
+          <Text>Select two objects</Text>
+          <Text>Object 1:</Text>
+
+          <Text>Object 2:</Text>
+          
 	    </View>
     );
   }
